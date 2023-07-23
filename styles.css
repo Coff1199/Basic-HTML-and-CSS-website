@@ -8,6 +8,7 @@ body {
 
 h1 {
     font: impact;
+    text-align: center;
 }
 
 p {
@@ -25,3 +26,11 @@ label {
     margin-right: auto;
     width: 50%;
   }
+
+.header {
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+}
