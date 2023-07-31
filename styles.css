@@ -84,6 +84,19 @@ nav > ul {
     list-style-type: none;
 }
 
+nav > ul > li {
+    color: #dfdfe2;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+  }
+  
+  nav > ul > li:hover {
+    background-color: #dfdfe2;
+    color: #1b1b32;
+    cursor: pointer;
+  }
+
 footer {
     text-align: center;
 }
