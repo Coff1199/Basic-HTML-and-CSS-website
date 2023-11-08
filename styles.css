@@ -1,9 +1,25 @@
+/*[data-theme="light"] {
+  --main-background-color: #f5f6f7;
+  --main-text-color: #1b1b32;
+  --header-background-color: #fff;
+  --header-text-color: black;
+  --highlight-color: #9f9f9f;
+}*/
+
+:root {
+  --main-background-color: #1b1b32;
+  --main-text-color: #f5f6f7;
+  --header-background-color: #0a0a23;
+  --header-text-color: #fff;
+  --highlight-color: #1b1b32;
+}
+
 body {
     width: 99%;
     height: 99%;
     margin: 5;
-    background-color: #1b1b32;
-    color: #f5f6f7;
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
 }
 
 h1,h2 {
@@ -12,7 +28,7 @@ h1,h2 {
 
 h2 {
     text-align: center;
-    border-bottom: 2px solid #3b3b4f;
+    border-bottom: 2px solid var(--main-text-color);
 }
 
 p {
@@ -39,9 +55,9 @@ select {
 }
 
 input, textarea {
-  background-color: #0a0a23;
-  border: 1px solid #0a0a23;
-  color: #ffffff;
+  background-color: var(--main-background-color);
+  border: 1px solid var(--main-text-color);
+  color: var(--main-text-color);
 }
 
 form {
@@ -62,20 +78,21 @@ img {
 .header {
     text-transform: uppercase;
     padding: 16px;
-    background-color: #0a0a23;
-    color: #fff;
+    background-color: var(--header-background-color);
+    color: var(--header-text-color);
     border-bottom: 4px solid #fdb347;
 }
 
 input[type="submit"] {
     display: block;
-  width: 60%;
-  margin: 1em auto;
-  height: 2em;
-  font-size: 1.1rem;
-  background-color: #3b3b4f;
-  border-color: white;
-  min-width: 300px;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: var(--main-text-color);
+    color: var(--main-background-color);
+    border-color: var(--main-background-color);
+    min-width: 300px;
 }
 
 nav > ul {
@@ -85,16 +102,22 @@ nav > ul {
 }
 
 nav > ul > li {
-    color: #dfdfe2;
     margin: 0 0.2rem;
     padding: 0.2rem;
     display: block;
   }
   
   nav > ul > li:hover {
-    background-color: #dfdfe2;
-    color: #1b1b32;
+    background-color: var(--highlight-color);
     cursor: pointer;
+  }
+
+  header a {
+    text-decoration: None;
+  }
+  
+  header a:visited {
+    color: var(--main-text-color);
   }
 
 footer {
