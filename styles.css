@@ -26,6 +26,10 @@ h1,h2 {
     font: Impact;
 }
 
+header h2 {
+  border-bottom: None;
+}
+
 h2 {
     text-align: center;
     border-bottom: 2px solid var(--main-text-color);
